@@ -4,9 +4,9 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Location-based AR</title>
-        <script type="text/javascript" src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-        <script type="text/javascript" src="https://www.unpkg.com/@ar-js-org/ar.js@3.4.5/three.js/build/ar-threex-location-only.js"></script>
-        <script type="text/javascript" src="https://www.unpkg.com/@ar-js-org/ar.js@3.4.5/aframe/build/aframe-ar.js"></script>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
+        <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
         <link rel="stylesheet" href="styles.css">
@@ -24,9 +24,9 @@
 <body style='margin: 0; overflow: hidden;'>  
     <a-scene 
     debug vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='precision: mediump; antialias: false; alpha: true; logarithmicDepthBuffer: true; colorManagement: true;' device-orientation-permission-ui="enabled: false">
-    <a-camera gps-camera far='100' rotation-reader></a-camera>
+    <a-camera gps-new-camera></a-camera>
 
-        <a-entity gps-entity-place="latitude: 1.3086356574733822; longitude: 103.84991345696235;"
+        <a-entity gps-new-entity-place="latitude: 1.3086356574733822; longitude: 103.84991345696235;"
             gltf-model="./assets/CableCar/CableCar_1.gltf"
             rotation="0 0 0"
             position="0 0 0"
