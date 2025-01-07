@@ -22,7 +22,12 @@
         })
     </script>
 <body style='margin: 0; overflow: hidden;'>  
-    <a-scene 
+
+    <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <a-box color="red" gps-new-entity-place="latitude: 1.3086356574733822; longitude: 103.84991345696235" depth="10" height="10" width="10"></a-box>
+    </a-scene>
+    <!-- <a-scene 
     debug vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='precision: mediump; antialias: false; alpha: true; logarithmicDepthBuffer: true; colorManagement: true;' device-orientation-permission-ui="enabled: false">
     <a-camera gps-new-camera></a-camera>
 
@@ -34,6 +39,6 @@
             visible="true"
             no-cull
         ></a-entity>
-    </a-scene>
+    </a-scene> -->
 </body>
 </html>
